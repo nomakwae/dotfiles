@@ -6,4 +6,4 @@ if [[ -f ~/.bashrc ]] ; then
 	. ~/.bashrc
 fi
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH"

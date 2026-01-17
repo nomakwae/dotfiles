@@ -99,3 +99,15 @@ if [ -e "${BASHRC}" ]; then
 else
 	cp .bashrc "${HOME}"
 fi
+
+BASH_PROFILE="${HOME}/.bash_profile"
+if [ -e "${BASHRC}" ]; then
+	echo -e "${DEPLOY} ${BASH_PROFILE} already exists."
+	if ! diff "${BASH_PROFILE}" ".bash_profile" &>/dev/null; then
+		prompt "${BASH_PROFILE}" ".bash_profile" "${HOME}"
+	else
+		echo -e "${DEPLOY} files are the same, skipping."
+	fi
+else
+	cp .bash_profile "${HOME}"
+fi
