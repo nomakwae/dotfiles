@@ -2,6 +2,8 @@
 
 DEPLOY="\e[01;31m[DEPLOY]:\e[00m"
 
+alias cp="cp --preserve=all"
+
 if command -v sudo &>/dev/null; then
 	DOAS="sudo"
 elif command -v doas &>/dev/null; then
