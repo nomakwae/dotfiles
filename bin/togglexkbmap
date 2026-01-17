@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+LAYOUT=$(setxkbmap -query | awk '/layout:/ {print $2}')
+
+if [ $LAYOUT = "us" ]; then
+	setxkbmap ca -option caps:swapescape
+else
+	setxkbmap us -option caps:swapescape
+fi

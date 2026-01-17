@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [[ "$1" == "-t" ]] || [[ "$1" == "--tor" ]]; then
+    yt-dlp -x --audio-format=mp3 --proxy SOCKS5://127.0.0.1:9050 "${@:2}"
+else
+	yt-dlp -x --audio-format=mp3 "${@:1}"
+fi
