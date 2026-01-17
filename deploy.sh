@@ -86,3 +86,14 @@ else
 	cd -
 fi
 
+BASHRC="${HOME}/.bashrc"
+if [ -e "${BASHRC}" ]; then
+	echo -e "${DEPLOY} ${BASHRC} already exists."
+	if ! diff "${BASHRC}" ".bashrc" &>/dev/null; then
+		prompt "${BASHRC}" ".bashrc" "${HOME}"
+	else
+		echo -e "${DEPLOY} files are the same, skipping."
+	fi
+else
+	cp .bashrc "${HOME}"
+fi
