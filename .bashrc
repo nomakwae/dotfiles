@@ -21,3 +21,5 @@ set -o vi
 alias vim='nvim'
 alias i3lock='i3lock -i ~/Pictures/wallpapers/ocean_1758733229656562.png'
 alias mkdir='mkdir -p'
+
+PS1="\[\e[01;32m\]\u@\h\[\e[01;34m\] \W λ \[\e[00m\]"
