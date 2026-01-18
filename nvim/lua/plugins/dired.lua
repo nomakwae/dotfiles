@@ -32,7 +32,7 @@ return {
 				dired_copy_marked = "MC",
 				dired_move = "r",
 				dired_move_range = "r",
-				dired_move_marked = "R",
+				dired_rename = "R",
 				dired_mark = "t",
 				dired_mark_range = "t",
 				dired_paste = "P",
