@@ -1,5 +1,5 @@
 return {
-	"X3eRo0/dired.nvim",
+	"nomakwae/dired.nvim",
 	dependencies = {
 		"MunifTanjim/nui.nvim",
 	},
