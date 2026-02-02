@@ -15,6 +15,8 @@ setup("emmet_language_server")
 
 setup("clangd")
 
+setup("ts_ls")
+
 setup("lua_ls", {
 	on_init = function(client)
 		if client.workspace_folders then

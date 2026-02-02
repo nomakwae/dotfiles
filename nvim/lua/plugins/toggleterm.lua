@@ -11,8 +11,6 @@ return {
 				open_mapping = [[<c-t>]],
 				float_opts = {
 					border = "double",
-					width = 100,
-					height = 30,
 					winblend = 0,
 				},
 			})
