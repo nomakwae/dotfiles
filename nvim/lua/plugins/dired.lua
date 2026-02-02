@@ -12,6 +12,7 @@ return {
 			show_dot_dirs = true,
 			show_colors = true,
 			sort_order = "dirs",
+			override_cwd = false,
 
 			colors = {
 				DiredSymbolicLink = { link = {}, bg = "NONE", fg = "33ccff", gui = "bold" },

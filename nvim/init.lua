@@ -12,6 +12,8 @@ require("core")
 
 require("plugins")
 
+require("local")
+
 -- Set working directory to argument passed
 -- If the argument passed is a file, set working directory to its parent
 -- If the argument passed is a directory, cd into it
