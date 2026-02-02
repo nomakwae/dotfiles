@@ -15,6 +15,17 @@ setup("emmet_language_server")
 
 setup("clangd")
 
+setup("intelephense", {
+	settings = {
+		intelephense = {
+			stubs = {
+				"Core",
+				"wordpress",
+			}
+		}
+	}
+})
+
 setup("ts_ls")
 
 setup("lua_ls", {
