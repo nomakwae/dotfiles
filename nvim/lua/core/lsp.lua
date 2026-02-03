@@ -19,8 +19,9 @@ setup("intelephense", {
 	settings = {
 		intelephense = {
 			stubs = {
-				"Core",
 				"wordpress",
+				"wp-cli",
+				"*",
 			}
 		}
 	}
