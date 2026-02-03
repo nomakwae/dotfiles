@@ -10,8 +10,7 @@ set("t", "<C-q>", "<cmd>quit<CR>")
 
 set("i", "<C-c>", "<Esc>")
 
-set("n", "<leader>fe", "<cmd>Oil<CR>")
-set("n", "<C-x><C-j>", "<cmd>Dired<CR>")
+set("n", "<leader>fe", "<ESC><cmd>Dired<CR>")
 
 set("v", "J", ":m '>+1<CR>gv=gv")
 set("v", "K", ":m '<-2<CR>gv=gv")
